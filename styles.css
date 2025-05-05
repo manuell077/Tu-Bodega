@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.presentacion{
+
+    width: 50%;
+    background-color: rgba(205, 65, 4, 1);
+    color: #fff;
+    font-family: "Jockey One", sans-serif;
+}
