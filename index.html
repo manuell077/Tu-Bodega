@@ -8,19 +8,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--Seccion de ingreso-->
     <div class="inicioSesion">
 
      <div class="presentacion">
-        <h1 class="presentacion__titulo">TU BODEGA</h1>
-        <p class="presentacion__parrafo">ADMINISTRA TU INVENTARIO , REALIZA TUS FACTURAS Y LLEVA EL CONTROL DE TUS VENTAS</p>
-        <img src="imagenes/tu_bodega_logo.png" class="presentacion__imagen" >
+        <div class="contenido"> 
+        <h1 class="contenido__titulo">TU BODEGA</h1>
+        <p class="contenido__parrafo">ADMINISTRA TU INVENTARIO , REALIZA TUS FACTURAS Y LLEVA EL CONTROL DE TUS VENTAS</p>
+        <img src="imagenes/tu_bodega_logo.png" class="contenido__imagen" >
+    </div>
      </div>
      <div class="botones">
-        <p class="botones__parrafo">INGRESA EN EL SISTEMA SEGUN TU ROL O CREAR UNA CUENTA SI NO TIENES</p>
-        <div class="botones__ingresar">Ingresar</div>
-        <div class="botones__registrarme">Registrarme</div>
+        <div class="inicio">
+        <p class="inicio__parrafo">INGRESA EN EL SISTEMA SEGUN TU ROL O CREA UNA CUENTA SI NO TIENES</p>
+        <div class="inicio__ingresar">INGRESAR</div>
+        <div class="inicio__ingresar">REGISTRARME</div>
+    </div>
      </div>
 
     </div>
+    
+    <div class="login">
+        <div class="entrada">
+            <h1 class="entrada__titulo">INGRESA EN EL SISTEMA</h1> 
+            
+            <div class="ingresoDatos">
+            <label class="ingresoDatos__texto" for="usuario">usuario</label>
+            <input type="text" class="ingresoDatos__entrada" id="usuario">
+           </div>
+            
+           <div class="ingresoDatos">
+            <label class="ingresoDatos__texto" for="contraseña">contraseña</label>
+            <input type="password" class="ingresoDatos__entrada">
+        </div>
+           
+        <div class="ingresoDatos">
+            <label class="ingresoDatos__texto">rol</label>
+            
+            <select >
+                <option selected disabled hidden>Selecciona el rol</option>
+                <option>administrador</option>
+                <option>empleado</option>
+                
+            </select> 
+        </div>
+        
+        </div>
+        <div class="validacion"></div>
+    </div>
+    
+
 </body>
 </html>
