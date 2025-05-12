@@ -10,6 +10,7 @@
 
 :root{
     --colorPrograma:rgba(205, 65, 4, 1); 
+    --colorHover:rgb(168, 54, 5); 
     --colorBlanco: #fff;
 }
 
@@ -218,8 +219,15 @@
     width: 280px;
     height: 50px;
     font-size: 20px;
+    border: none;
 
 }
+
+.enviar__boton:hover{
+    cursor: pointer;
+    background-color: var(--colorHover);
+}
+
 
 .enviar__ayuda{
     text-decoration: none;
@@ -257,6 +265,5 @@
 .entrada__titulo--espacioAbajo{
     margin-bottom: 20px;
 }
-
 
 
