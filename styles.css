@@ -267,3 +267,164 @@
 }
 
 
+/*ESTRUCTURA DE LA PAGINA WEB*/
+
+.estructura{
+    width: 100%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 20%  80%;
+    grid-template-rows: 20% 80%; 
+    grid-template-areas: 
+    'sidebar main'
+    'sidebar main';
+    height: 100vh;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: var(--colorPrograma);
+    padding: 10px;
+}
+
+.perfil{
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: solid 3px var(--colorBlanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    color: var(--colorBlanco);
+}
+
+.perfil__imagen{
+    width: 60px;
+}
+
+.perfil__texto{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.espacio{
+    width: 100%;
+    height: 75px;
+    background-color: var(--colorBlanco);
+}
+
+.caja{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    font-size: 20px;
+    margin-top: 60px;
+    color: var(--colorBlanco);
+    justify-content: center;
+    align-items: center;
+}
+
+.caja--seleccion{
+    color: var(--colorPrograma);
+    background-color: var(--colorBlanco);
+}
+
+/*Estilos de inventario*/
+
+
+.main{
+    grid-area: main;
+    
+}
+
+
+.titulo{
+    
+    text-align: center;
+    color: var(--colorPrograma);
+    font-size: 60px ;
+
+}
+
+.carta{
+    margin-left: 50px;    
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 350px;
+    color: var(--colorBlanco);
+    background-color: var(--colorPrograma);
+    width: 260px;
+    
+}
+
+.carta__imagen{
+  width: 100%;
+
+}
+
+.carta__parrafo{
+    font-size: 20px;
+    padding: 15px;
+    
+}
+
+
+.cantidad{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.cantidad__circulo{
+    background-color: var(--colorBlanco);
+    border-radius: 60%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorPrograma);
+}
+
+
+.botones{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    gap: 20px;
+    color: var(--colorBlanco);
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--colorPrograma);
+}
+
+.boton__imagen{
+    height: 30px;
+}
+   
+.boton__texto{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
