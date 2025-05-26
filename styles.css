@@ -525,3 +525,63 @@
 
 
 
+/*Seccion de pedidos*/
+.pedido{
+    width: 70%;
+    height: 4%;
+    margin:40px auto;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content:space-between;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+    color: var(--colorPrograma);
+}
+
+.icono{
+    font-size: 25px;
+}
+
+.linkIcono{
+    text-decoration: none;
+    color: var(--colorPrograma);
+}
+
+
+
+
+
+/*Deudores*/
+
+.deudor{
+    margin: 40px auto;
+    box-shadow: 0px 0px 2px black;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    border-radius:15px ;
+    background-color: var(--colorPrograma) ;
+    color: var(--colorBlanco);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkDeudor{
+    color: var(--colorPrograma);
+}
+
+.iconoDeudor{
+    font-size: 20px;
+    color: var(--colorBlanco);
+}
+
+/*Modificaicon de carta de imagen*/
+.carta__imagen--añadir{
+    margin: 10px auto;
+}
+
+.botones__link{
+    text-decoration: none;
+}

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventario</title>
-    <link rel="shortcut icon" href="./imagenes/tu_bodega_logo.png"> 
+    <title>Modificar</title>
+    <link rel="shortcut icon" href="./imagenes/tu_bodega_logo.png">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="estructura">
-      
-        <aside class="sidebar">
+    <aside class="sidebar">
             <div class="perfil">
                 <img src="imagenes/Perfil.png" class="perfil__imagen">
                 <p class="perfil__texto">NOMBRE DE USUARIO</p>
@@ -18,18 +18,20 @@
             
             <div class="caja caja--seleccion"><a href="inventario.html" class="caja__link caja__link--seleccion">INVENTARIO</a></div>
             <div class="caja"><a href="ventas.html" class="caja__link">VENTAS</a></div>
-            <div class="caja"><a href="facturacion.html" class="caja__link">FACTURACION</a></div>
+            <div class="caja "><a href="facturacion.html" class="caja__link ">FACTURACION</a></div>
             <div class="caja"><a href="pedidios.html" class="caja__link">PEDIDOS</a></div>
-            <div class="caja"><a href="deudores.html" class="caja__link">DEUDORES</a></div>
+            <div class="caja "><a href="deudores.html" class="caja__link ">DEUDORES</a></div>
             
             
         </aside>
+    
 
-        <main class="main">
-             
-            <h1 class="titulo">INVENTARIO</h1>
+    <main class="main">
 
-            <div class="carta">
+        <h1 class="titulo">INVENTARIO</h1>
+         
+
+        <div class="carta">
                  <img src="./imagenes/CanastaTomates.png" class="carta__imagen">
                  <p class="carta__parrafo">CANASTILLAS DE TOMATES</p>
                  <p class="carta__parrafo">Peso: 24kg</p>
@@ -38,29 +40,13 @@
                  <div class="cantidad__circulo">50</div>
                  </div>
             </div>
-             
-
-            <div class="botones ">
-                <a href="Agregar.html" class="botones__link"><div class="boton"><p class="boton__texto">AGREGAR</p><img src="./imagenes/Agregar.png" class="boton__imagen"></div></a>
-                <div class="boton">
-                    <a href="Modificar.html" class="botones__link"><div class="boton"><p class="boton__texto">MODIFICAR</p><img src="./imagenes/Modificar.png" class="boton__imagen"></div></a>
-                </div>
-                <div class="boton">
-                  <div class="boton"><p class="boton__texto">ELIMINAR</p><img src="./imagenes/Eliminar.png" class="boton__imagen"></div>
-                </div>
-            </div>
-             
             
+            <div class="botones">
+            <a href="inventario.html" class="botones__link"><div class="boton"><p class="boton__texto">MODIFICAR</p><img src="./imagenes/Modificar.png" class="boton__imagen"></div></a>
+            </div>
+    </main>
 
-
-
-
-
-        </main>
-
-
-
-    </div>
+</div>
 
 
 </body>
