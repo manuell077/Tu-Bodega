@@ -199,6 +199,12 @@
 
 
 /*Parte de envio del formulario o ayuda si el usuario olvido la contraseña*/
+.link{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    
+}
+
 .enviar{
    margin-top: 160px; 
    display: flex;
@@ -584,4 +590,31 @@
 
 .botones__link{
     text-decoration: none;
+}
+
+/*Pedido Deuda*/
+.pedido--deuda{
+    height: 100px ;
+    font-size: 20px;
+}
+
+.deudores__titulo{
+    margin-left: 15%;
+    font-size: 40px;
+    color: var(--colorPrograma);
+    letter-spacing: 1px;
+}
+
+/*Deduores detalle*/
+
+.carta--deuda{
+     height: 400px;
+    width: 280px ;
+    margin-left: 15%;
+
+}
+
+.carta--detallePedido{
+    height: 500px;
+    width: 290px;
 }

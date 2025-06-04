@@ -6,11 +6,13 @@
     <title>Deudores</title>
     <link rel="shortcut icon" href="./imagenes/tu_bodega_logo.png"> 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
 </head>
 <body>
-    <div class="estructura">
-    <aside class="sidebar">
+    
+<div class="estructura">
+        <aside class="sidebar">
             <div class="perfil">
                 <img src="imagenes/Perfil.png" class="perfil__imagen">
                 <p class="perfil__texto">NOMBRE DE USUARIO</p>
@@ -27,34 +29,37 @@
 
         <main class="main">
         <h1 class="titulo">DEUDORES</h1>
+
+        <div class="pedido pedido--deuda"> 
+                 <p>NOMBRE: Pancho Rodriguez</p>
+                 <p>DEUDA: $500.000</p>
+            </div>
+
+
+            <h3 class="deudores__titulo">PEDIDOS:</h3>
         
+            <div class="carta carta--deuda">
+                 
+                 <p class="carta__venta">VENTA N°</p>
+                 <p class="carta__parrafo">Cliente: Nombre del cliente</p>
+                 <p class="carta__parrafo">Valor: $1.000.000</p>
+                 <p class="carta__parrafo">Abonado: $500.000</p>
+                 <div class="cantidad cantidad--productos">
+                 <p class="cantidad__parrafo">Cantidad: </p>
+                  <div class="cantidad__circulo cantidad__circulo--producto">30 canastas de limones</div>
+                  <div class="cantidad__circulo cantidad__circulo--producto">20 canastas de tomate</div>
+                 </div>
+                 <p class="carta__parrafo">Hora: 3:20 AM</p>
+            </div>
 
-        <div class="deudor">
-            <p>NOMBRE:Pancho Rodriguez</p>
-            <p>DEUDA: $40.000</p>
-            <a href="detalleDeudores.html" class="linkDeudor"><i class="bi bi-arrow-down iconoDeudor "></i></a>
-        </div>
-
-         <div class="deudor">
-            <p>NOMBRE:Pancho Rodriguez</p>
-            <p>DEUDA: $40.000</p>
-            <a href="detalleDeudores.html" class="linkDeudor"><i class="bi bi-arrow-down iconoDeudor "></i></a>
-        </div>
-
-         <div class="deudor">
-            <p>NOMBRE:Pancho Rodriguez</p>
-            <p>DEUDA: $40.000</p>
-            <a href="detalleDeudores.html" class="linkDeudor"><i class="bi bi-arrow-down iconoDeudor "></i></a>
-        </div>
 
 
         </main>
         
-        
 
-        </div>
 
-     
+</div>
+
 
 </body>
 </html>
