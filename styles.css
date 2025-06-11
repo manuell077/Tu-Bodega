@@ -631,7 +631,7 @@
 /*Parte de perfil del usuario*/
 
 .usuario{
-     margin: 60px auto;
+     margin: 20px auto;
      width: 40%;
      height: 700px;
      border-radius: 18px;
@@ -668,9 +668,14 @@
 }
 
 .flecha--perfil{
-    background-color:var(--colorBlanco);
-    color: var(--colorPrograma);
+    
+    background-color: var(--colorBlanco);
     font-size: 60px;
     
 }
+.flecha__imagen{
+    margin-left: 20px;
+    color: var(--colorPrograma);
+}
+
 
