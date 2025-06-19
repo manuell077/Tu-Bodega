@@ -1,16 +1,18 @@
 export const Ingresar = (e,formu) =>{
       e.preventDefault();
     const datos ={
-            cedula: formu.cedula.value,
+            cedula:Number( formu.cedula.value),
             nombre: formu.nombre.value,
             direccion: formu.direccion.value,
-            telefono: formu.telefono.value,
-            correo_electronico: formu.correo_electronico.value,
-            rol: formu.rol.value
+            telefono:Number(formu.telefono.value),
+            correo_electronico: formu.correoElectronico.value
+           
            
         
     }
     
+    console.log(datos)
+
       fetch("http://localhost:8080/Tu_Bodega/api/tramitante", {
     method: "POST",
     headers: {
@@ -18,7 +20,7 @@ export const Ingresar = (e,formu) =>{
     },
     body: JSON.stringify(datos)
   })
-    .then(res => res.json())
+    .then(res => res.text())
     .then(data => {
       console.log("Respuesta:", data);
     })
