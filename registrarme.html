@@ -20,22 +20,24 @@
             
             <div class="inicial">
             <div class="textos">
-                <label for="usuario">nombre de usuario</label>
+                <label for="usuario">nombre</label>
                 <label for="contrasena">crear contraseña</label>
                 <label for="repetirContrasena">Repite la contraseña</label>
                 <label for="correoElectronico">Correo Electronico</label>
-                <label for="rol">rol</label>
                 <label for="telefono">Telefono</label>
+                <label for="cedula">Cedula</label>
+                <label for="direccion">Direccion</label>
             </div>
             <div class="datos">
-                <input type="text" id="usuario" class="datos__entrada">
-                <input type="password" id="contrasena" class="datos__entrada">
-                <input type="password" id="repetirContrasena" class="datos__entrada">
-                <input type="text" id="correoElectronico" class="datos__entrada">
-                <select class="datos__rol" id="rol">
-                    <option disabled hidden selected>Seleccione un rol</option>
-                </select>
-                <input type="number" id="telefono" class="datos__entrada">
+                <input type="text" id="usuario" class="datos__entrada" name="usuario">
+                <input type="password" id="contrasena" class="datos__entrada" name="password">
+                <input type="password" id="repetirContrasena" class="datos__entrada" name="repeatPassword">
+                <input type="text" id="correoElectronico" class="datos__entrada" name="correoElectronico">
+                
+                <input type="number" id="telefono" class="datos__entrada" name="telefono">
+                <input type="number" id="cedula" class="datos__entrada" name="cedula">
+                <input type="text" id="direccion" class="datos__entrada" name="direccion">
+                
             </div>
             </div>            
 
@@ -46,6 +48,8 @@
     </div>
 
     </form>
+
+    <script src="ConexionApi/Registrarme.js" type="module"></script>
     
 </body>
 </html>

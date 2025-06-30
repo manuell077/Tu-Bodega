@@ -119,7 +119,12 @@
     align-items: center;
     background-color: var(--colorPrograma);
     width: 100%;
-    height: 50%;
+    height: 55%;
+}
+
+.entrada--login{
+    height: 35%;
+    
 }
 
 .entrada__titulo{
@@ -150,6 +155,8 @@
     
 }
 
+
+
 .textos{
     text-transform: uppercase;
     display: flex;
@@ -160,6 +167,9 @@
     gap: 65px;
     font-size: 20px;
 }
+
+
+
 
 .datos{
     gap: 50px;
