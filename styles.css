@@ -127,6 +127,9 @@
     
 }
 
+
+
+
 .entrada__titulo{
     text-transform: uppercase;
     color: var(--colorBlanco);
@@ -271,6 +274,7 @@
 
 .entrada--espacio{
     gap: 0;
+    height: 63%;
 }
 .entrada--espacio .textos{
     gap: 30px;
