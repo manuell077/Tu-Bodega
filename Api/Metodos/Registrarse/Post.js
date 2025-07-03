@@ -16,9 +16,16 @@ export function post(event,formu){ //Recibe como parametros el evento y el formu
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data) //Se serializa en un json 
 
-    }).then(res => {
-          res.text();
-          if(res.ok){ alert("Se ha realizado el registro correctamente")}else{alert("Ha ocurrido un error")}
-        }).then(texto =>console.log(texto)).catch(err => console.error("Error:", err)); //Se  resuelve si el servidor trae una respuesta de tipo texto y despues se imprime lo que se obtiene por consola
+    }).then(res => res.text().then(texto=>{
+      if (res.ok) {
+        alert("✅ Se ha realizado el registro correctamente");
+    } else {
+        alert("❌ Ha ocurrido un error: " + texto);
+    }
+
+    })).catch(err =>{
+        console.log(err)
+    })
+          
 
 }
