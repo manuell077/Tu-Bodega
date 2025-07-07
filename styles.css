@@ -152,12 +152,41 @@
 .inicial{
     display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
-
+    
     
 }
 
+.componente{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: var(--colorBlanco);
+  font-size: 20px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.componente--sinMargin{
+    margin-bottom: 0px;
+}
+
+
+.componente__label{
+    width: 180px;
+    text-align:end;
+    margin-right: 10px;
+}
+
+
+.componente__entrada{
+    
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+    border:none;
+    color: var(--colorPrograma);
+}
 
 
 .textos{
@@ -178,18 +207,14 @@
     gap: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 400px; 
     
 }
     
 
 
-.datos__entrada{
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    color: var(--colorPrograma) ;
-}
+
 
 .datos__rol{
     height: 40px;
@@ -691,5 +716,30 @@
     margin-left: 20px;
     color: var(--colorPrograma);
 }
+
+/*Parte de clases creadas con doom*/
+
+
+
+
+.componente--sinMargin{
+    margin-bottom: 0px;
+   
+}
+
+.mensajeError{
+    width: 400px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--colorBlanco);
+    
+    
+    
+}
+
+
+
 
 
