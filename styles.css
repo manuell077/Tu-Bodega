@@ -163,7 +163,7 @@
   width: 50%;
   color: var(--colorBlanco);
   font-size: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   flex-wrap: wrap;
 }
 
@@ -174,7 +174,7 @@
 
 .componente__label{
     width: 180px;
-    text-align:end;
+    text-align:center;
     margin-right: 10px;
 }
 
@@ -186,6 +186,10 @@
     border-radius: 5px;
     border:none;
     color: var(--colorPrograma);
+    outline: none;
+    position: relative;
+    font-size: 15px;
+    padding: 10px;
 }
 
 
@@ -299,7 +303,7 @@
 
 .entrada--espacio{
     gap: 0;
-    height:58%;
+    height:65%; 
 }
 .entrada--espacio .textos{
     gap: 30px;
@@ -735,7 +739,13 @@
     font-size: 15px;
     color: var(--colorBlanco);
     
-    
+    position: absolute;  
+    /* top: 185px; */
+    margin-bottom: -60px;
+    margin-left: -10px;
+    /* bottom: top; */
+    /* left: 80px; */
+    color: #000;
     
 }
 
