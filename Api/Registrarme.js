@@ -1,4 +1,5 @@
-import {post,ValidarVacios} from "./Metodos/Registrarse/index.js" //Se importa el metodo post del archivo barril
+import {post} from "./Metodos/Registrarse/index.js" //Se importa el metodo post del archivo barril
+import {ValidarRegistro, ValidarLetras,ValidarEspacios, ValidarPassword, ValidarRepeticion, ValidarCorreo, ValidarNumeros, ValidarDireccion,ValidarCedula} from "./Metodos/Validacion/index.js"
 
 const formu = document.querySelector(".registrarme") //Se selecciona el formulario 
 const nombre = document.querySelector("#nombre") //Se selecciona el input con el id nombre 
@@ -9,16 +10,65 @@ const telefono = document.querySelector("#telefono") //Se selecciona el input co
 const cedula = document.querySelector("#cedula") //Se selecciona el input con el id de la cedula
 const direccion = document.querySelector("#direccion") //Se selecciona el input con el id de la cedula
 
-formu.addEventListener("submit", (e) =>   post(e,formu)) //Se le añade el evento al formulario que cuando se envie se ejecute la funcion 
-
-
-//Se realiza las validaciones con el evento keyup que es un evento que se activa cuando el usuario suelta una tecla 
-
-//Validaciones para saber si los campos estan vacios 
-nombre.addEventListener("keyup",ValidarVacios) 
 
 
 
-//Evento de desenfoque que es cuando se quite el foco de este campo entonces borre el mensaje de error
-// nombre.addEventListener("blur",EliminarErrores)
+
+
+nombre.addEventListener("keyup",(e)=>{
+    ValidarLetras(nombre)
+    ValidarEspacios(nombre)
+})
+
+password.addEventListener("keyup",(e)=>{
+    ValidarPassword(password)
+    ValidarEspacios(password)
+})
+
+Repeatpassword.addEventListener("keyup",(e)=>{
+    ValidarRepeticion(Repeatpassword,password.value)
+    ValidarEspacios(Repeatpassword)
+})
+
+
+correo.addEventListener("keyup",(e)=>{
+    ValidarCorreo(correo)
+    ValidarEspacios(correo)
+})
+
+telefono.addEventListener("keyup",(e)=>{
+    ValidarNumeros(telefono)
+    ValidarEspacios(telefono)
+})
+
+cedula.addEventListener("keyup",(e)=>{
+    ValidarCedula(cedula)
+    ValidarEspacios(cedula)
+})
+
+direccion.addEventListener("keyup",(e)=>{
+    ValidarDireccion(direccion)
+    ValidarEspacios(direccion)
+})
+
+
+
+formu.addEventListener("submit", (e) =>  {
+            
+  let objeto =   ValidarRegistro(e)
+    
+  if(objeto != false){
+    objeto["fkRol"] = 2 
+
+    post(e,objeto)
+
+  }else{
+    alert("❌Tienes que completar todos los campos correctamente")
+  }
+  
+
+}) 
+
+
+
 
